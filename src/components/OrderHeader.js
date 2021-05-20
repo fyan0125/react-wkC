@@ -1,5 +1,4 @@
 export default function ShippingHeader(props) {
-
   return (
     <header className="header">
       <div className="header-wrap">

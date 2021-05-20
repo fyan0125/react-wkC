@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { Form, Input, Button } from "antd";
 import { logoutFromFirebase, updateUserInfo } from "../actions";
 import { StoreContext } from "../store";
+import MyOrders from "./myOrders";
 
 const ProfileCard = () => {
   const {
@@ -25,6 +26,7 @@ const ProfileCard = () => {
     history.push("/");
   };
   return (
+    <>
     <Form
       onFinish={handleUpdate}
       name="normal_login"
@@ -121,6 +123,8 @@ const ProfileCard = () => {
         </Button>
       </Form.Item>
     </Form>
+    <MyOrders />
+    </>
   );
 };
 export default ProfileCard;
