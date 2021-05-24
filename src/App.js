@@ -17,7 +17,7 @@ function App() {
   return (
     <StoreProvider>
       <BrowserRouter>
-        <Switch>
+      <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/products/:pageName" component={Home} />
           <Route path="/admin/feed-products" component={Feed} />
